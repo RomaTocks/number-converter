@@ -77,6 +77,7 @@ public class NumberConverter extends Converter implements Convertable {
                 if(lastNumbers > 10 && lastNumbers < 20) {
                     secondNumber = getNumberOnPosition(currentNumberString,1);
                     String decimal = dataHandler.getDecimalBetweenTenAndTwenty()[secondNumber];
+                    secondNumber = lastNumbers;
                     addWord(convertedNumber, decimal);
                 }
                 else {
