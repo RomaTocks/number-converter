@@ -15,23 +15,23 @@ public class NumberConverterApplication {
             reader.read();
             while (true) {
                 Scanner scanner = new Scanner(System.in);
-                System.out.println("Введите число: ");
+                System.out.println("Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ: ");
                 try
                 {
                     BigInteger value = scanner.nextBigInteger();
                     Convertable convertable = new NumberConverter(reader.getConfiguredData());
                     String answer = convertable.convertNumberIntoWords(value);
-                    System.out.println("Ответ: " + answer);
+                    System.out.println("РћС‚РІРµС‚: " + answer);
                 }
                 catch (Exception exception)
                 {
-                    System.out.println("Некорректное число!");
+                    System.out.println("РќРµРєРѕСЂСЂРµРєС‚РЅРѕРµ С‡РёСЃР»Рѕ!");
                 }
             }
         }
         catch (IOException e)
         {
-            System.out.println("Не удалось прочитать конфигурацию конвертера.");
+            System.out.println("РќРµ СѓРґР°Р»РѕСЃСЊ РїСЂРѕС‡РёС‚Р°С‚СЊ РєРѕРЅС„РёРіСѓСЂР°С†РёСЋ РєРѕРЅРІРµСЂС‚РµСЂР°.");
         }
     }
 }

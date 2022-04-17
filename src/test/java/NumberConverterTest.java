@@ -36,33 +36,33 @@ public class NumberConverterTest
     @Test
     public void zeroTest() {
         String testNumber = "0";
-        String exceptedAnswer = "ноль";
+        String exceptedAnswer = "РЅРѕР»СЊ";
         System.out.println("Test 0");
-        assertEquals("Ответ не соответсвует: ноль.", exceptedAnswer, converter.convertNumberIntoWords(new BigInteger(testNumber)));
+        assertEquals("РћС‚РІРµС‚ РЅРµ СЃРѕРѕС‚РІРµС‚СЃРІСѓРµС‚: РЅРѕР»СЊ.", exceptedAnswer, converter.convertNumberIntoWords(new BigInteger(testNumber)));
         System.out.println("Passed!");
     }
     @Test
     public void minusTest() {
         String testNumber = "-342000000";
-        String exceptedAnswer = "минус триста сорок два миллиона";
+        String exceptedAnswer = "РјРёРЅСѓСЃ С‚СЂРёСЃС‚Р° СЃРѕСЂРѕРє РґРІР° РјРёР»Р»РёРѕРЅР°";
         System.out.println("Minus test");
-        assertEquals("Ответ не соответсвует: минус триста сорок два миллиона.", exceptedAnswer, converter.convertNumberIntoWords(new BigInteger(testNumber)));
+        assertEquals("РћС‚РІРµС‚ РЅРµ СЃРѕРѕС‚РІРµС‚СЃРІСѓРµС‚: РјРёРЅСѓСЃ С‚СЂРёСЃС‚Р° СЃРѕСЂРѕРє РґРІР° РјРёР»Р»РёРѕРЅР°.", exceptedAnswer, converter.convertNumberIntoWords(new BigInteger(testNumber)));
         System.out.println("Passed!");
     }
     @Test
     public void oneTest() {
         String testNumber = "1";
-        String exceptedAnswer = "один";
+        String exceptedAnswer = "РѕРґРёРЅ";
         System.out.println("Test 1");
-        assertEquals("Ответ не соответсвует: один.", exceptedAnswer, converter.convertNumberIntoWords(new BigInteger(testNumber)));
+        assertEquals("РћС‚РІРµС‚ РЅРµ СЃРѕРѕС‚РІРµС‚СЃРІСѓРµС‚: РѕРґРёРЅ.", exceptedAnswer, converter.convertNumberIntoWords(new BigInteger(testNumber)));
         System.out.println("Passed!");
     }
     @Test
     public void fiveTest() {
         System.out.println("Test 5");
         String testNumber = "5";
-        String exceptedAnswer = "пять";
-        assertEquals("Ответ не соответсвует: пять.", exceptedAnswer, converter.convertNumberIntoWords(new BigInteger(testNumber)));
+        String exceptedAnswer = "РїСЏС‚СЊ";
+        assertEquals("РћС‚РІРµС‚ РЅРµ СЃРѕРѕС‚РІРµС‚СЃРІСѓРµС‚: РїСЏС‚СЊ.", exceptedAnswer, converter.convertNumberIntoWords(new BigInteger(testNumber)));
         System.out.println("Passed!");
     }
     @Test
@@ -70,14 +70,14 @@ public class NumberConverterTest
         System.out.println("Test of vigintillion");
         System.out.println("Data: 3490509368034875785678687567658667888286035609348609345860950345");
         String vigintillion = "3490509368034875785678687567658667888286035609348609345860950345";
-        String exceptedAnswer = "три вигинтиллиона четыреста девяносто ундевигинтиллионов пятьсот девять дуодевигинтиллионов " +
-                "триста шестьдесят восемь септдециллионов тридцать четыре седециллиона восемьсот семьдесят пять квиндециллионов " +
-                "семьсот восемьдесят пять кваттордециллионов шестьсот семьдесят восемь тредециллионов шестьсот восемьдесят семь " +
-                "дуодециллионов пятьсот шестьдесят семь ундециллионов шестьсот пятьдесят восемь дециллионов шестьсот шестьдесят " +
-                "семь ноналлионов восемьсот восемьдесят восемь октиллионов двести восемьдесят шесть септиллионов тридцать пять " +
-                "секстилионов шестьсот девять квинтиллионов триста сорок восемь квадриллионов шестьсот девять триллионов триста сорок пять " +
-                "миллиардов восемьсот шестьдесят миллионов девятьсот пятьдесят тысяч триста сорок пять";
-        assertEquals("Ответ не соответсвует заданному вигинтиллиону.", exceptedAnswer, converter.convertNumberIntoWords(new BigInteger(vigintillion)));
+        String exceptedAnswer = "С‚СЂРё РІРёРіРёРЅС‚РёР»Р»РёРѕРЅР° С‡РµС‚С‹СЂРµСЃС‚Р° РґРµРІСЏРЅРѕСЃС‚Рѕ СѓРЅРґРµРІРёРіРёРЅС‚РёР»Р»РёРѕРЅРѕРІ РїСЏС‚СЊСЃРѕС‚ РґРµРІСЏС‚СЊ РґСѓРѕРґРµРІРёРіРёРЅС‚РёР»Р»РёРѕРЅРѕРІ " +
+                "С‚СЂРёСЃС‚Р° С€РµСЃС‚СЊРґРµСЃСЏС‚ РІРѕСЃРµРјСЊ СЃРµРїС‚РґРµС†РёР»Р»РёРѕРЅРѕРІ С‚СЂРёРґС†Р°С‚СЊ С‡РµС‚С‹СЂРµ СЃРµРґРµС†РёР»Р»РёРѕРЅР° РІРѕСЃРµРјСЊСЃРѕС‚ СЃРµРјСЊРґРµСЃСЏС‚ РїСЏС‚СЊ РєРІРёРЅРґРµС†РёР»Р»РёРѕРЅРѕРІ " +
+                "СЃРµРјСЊСЃРѕС‚ РІРѕСЃРµРјСЊРґРµСЃСЏС‚ РїСЏС‚СЊ РєРІР°С‚С‚РѕСЂРґРµС†РёР»Р»РёРѕРЅРѕРІ С€РµСЃС‚СЊСЃРѕС‚ СЃРµРјСЊРґРµСЃСЏС‚ РІРѕСЃРµРјСЊ С‚СЂРµРґРµС†РёР»Р»РёРѕРЅРѕРІ С€РµСЃС‚СЊСЃРѕС‚ РІРѕСЃРµРјСЊРґРµСЃСЏС‚ СЃРµРјСЊ " +
+                "РґСѓРѕРґРµС†РёР»Р»РёРѕРЅРѕРІ РїСЏС‚СЊСЃРѕС‚ С€РµСЃС‚СЊРґРµСЃСЏС‚ СЃРµРјСЊ СѓРЅРґРµС†РёР»Р»РёРѕРЅРѕРІ С€РµСЃС‚СЊСЃРѕС‚ РїСЏС‚СЊРґРµСЃСЏС‚ РІРѕСЃРµРјСЊ РґРµС†РёР»Р»РёРѕРЅРѕРІ С€РµСЃС‚СЊСЃРѕС‚ С€РµСЃС‚СЊРґРµСЃСЏС‚ " +
+                "СЃРµРјСЊ РЅРѕРЅР°Р»Р»РёРѕРЅРѕРІ РІРѕСЃРµРјСЊСЃРѕС‚ РІРѕСЃРµРјСЊРґРµСЃСЏС‚ РІРѕСЃРµРјСЊ РѕРєС‚РёР»Р»РёРѕРЅРѕРІ РґРІРµСЃС‚Рё РІРѕСЃРµРјСЊРґРµСЃСЏС‚ С€РµСЃС‚СЊ СЃРµРїС‚РёР»Р»РёРѕРЅРѕРІ С‚СЂРёРґС†Р°С‚СЊ РїСЏС‚СЊ " +
+                "СЃРµРєСЃС‚РёР»РёРѕРЅРѕРІ С€РµСЃС‚СЊСЃРѕС‚ РґРµРІСЏС‚СЊ РєРІРёРЅС‚РёР»Р»РёРѕРЅРѕРІ С‚СЂРёСЃС‚Р° СЃРѕСЂРѕРє РІРѕСЃРµРјСЊ РєРІР°РґСЂРёР»Р»РёРѕРЅРѕРІ С€РµСЃС‚СЊСЃРѕС‚ РґРµРІСЏС‚СЊ С‚СЂРёР»Р»РёРѕРЅРѕРІ С‚СЂРёСЃС‚Р° СЃРѕСЂРѕРє РїСЏС‚СЊ " +
+                "РјРёР»Р»РёР°СЂРґРѕРІ РІРѕСЃРµРјСЊСЃРѕС‚ С€РµСЃС‚СЊРґРµСЃСЏС‚ РјРёР»Р»РёРѕРЅРѕРІ РґРµРІСЏС‚СЊСЃРѕС‚ РїСЏС‚СЊРґРµСЃСЏС‚ С‚С‹СЃСЏС‡ С‚СЂРёСЃС‚Р° СЃРѕСЂРѕРє РїСЏС‚СЊ";
+        assertEquals("РћС‚РІРµС‚ РЅРµ СЃРѕРѕС‚РІРµС‚СЃРІСѓРµС‚ Р·Р°РґР°РЅРЅРѕРјСѓ РІРёРіРёРЅС‚РёР»Р»РёРѕРЅСѓ.", exceptedAnswer, converter.convertNumberIntoWords(new BigInteger(vigintillion)));
         System.out.println("Passed!");
     }
     @Test
@@ -91,14 +91,14 @@ public class NumberConverterTest
             String convertedNumber = converter.convertNumberIntoWords(new BigInteger(testNumber));
             convertedNumbers.add(convertedNumber);
         }
-        assertArrayEquals("Ошибка в промежутке 11-19.", exceptedAnswer, convertedNumbers.toArray());
+        assertArrayEquals("РћС€РёР±РєР° РІ РїСЂРѕРјРµР¶СѓС‚РєРµ 11-19.", exceptedAnswer, convertedNumbers.toArray());
         System.out.println("Passed!");
     }
     @Test
     public void testDifferentDecimalNumbers() {
         String[] testNumbers = {"29", "42", "10", "34", "55", "76", "87", "56"};
-        String[] exceptedAnswer = {"двадцать девять", "сорок два", "десять", "тридцать четыре",
-                "пятьдесят пять", "семьдесят шесть", "восемьдесят семь", "пятьдесят шесть"};
+        String[] exceptedAnswer = {"РґРІР°РґС†Р°С‚СЊ РґРµРІСЏС‚СЊ", "СЃРѕСЂРѕРє РґРІР°", "РґРµСЃСЏС‚СЊ", "С‚СЂРёРґС†Р°С‚СЊ С‡РµС‚С‹СЂРµ",
+                "РїСЏС‚СЊРґРµСЃСЏС‚ РїСЏС‚СЊ", "СЃРµРјСЊРґРµСЃСЏС‚ С€РµСЃС‚СЊ", "РІРѕСЃРµРјСЊРґРµСЃСЏС‚ СЃРµРјСЊ", "РїСЏС‚СЊРґРµСЃСЏС‚ С€РµСЃС‚СЊ"};
         List<String> convertedNumbers = new ArrayList<>();
         System.out.println("Test different decimal numbers.");
         System.out.println("Data: " + Arrays.toString(testNumbers));
@@ -107,15 +107,15 @@ public class NumberConverterTest
             String convertedNumber = converter.convertNumberIntoWords(new BigInteger(testNumber));
             convertedNumbers.add(convertedNumber);
         }
-        assertArrayEquals("Ошибка в промежутке разных десятичных чисел.", exceptedAnswer, convertedNumbers.toArray());
+        assertArrayEquals("РћС€РёР±РєР° РІ РїСЂРѕРјРµР¶СѓС‚РєРµ СЂР°Р·РЅС‹С… РґРµСЃСЏС‚РёС‡РЅС‹С… С‡РёСЃРµР».", exceptedAnswer, convertedNumbers.toArray());
         System.out.println("Passed!");
     }
     @Test
     public void testDifferentHundredsNumbers() {
         System.out.println("Test different hundreds numbers.");
         String[] testNumbers = {"229", "442", "100", "934", "155", "176", "887", "756"};
-        String[] exceptedAnswer = {"двести двадцать девять", "четыреста сорок два", "сто", "девятьсот тридцать четыре",
-                "сто пятьдесят пять", "сто семьдесят шесть", "восемьсот восемьдесят семь", "семьсот пятьдесят шесть"};
+        String[] exceptedAnswer = {"РґРІРµСЃС‚Рё РґРІР°РґС†Р°С‚СЊ РґРµРІСЏС‚СЊ", "С‡РµС‚С‹СЂРµСЃС‚Р° СЃРѕСЂРѕРє РґРІР°", "СЃС‚Рѕ", "РґРµРІСЏС‚СЊСЃРѕС‚ С‚СЂРёРґС†Р°С‚СЊ С‡РµС‚С‹СЂРµ",
+                "СЃС‚Рѕ РїСЏС‚СЊРґРµСЃСЏС‚ РїСЏС‚СЊ", "СЃС‚Рѕ СЃРµРјСЊРґРµСЃСЏС‚ С€РµСЃС‚СЊ", "РІРѕСЃРµРјСЊСЃРѕС‚ РІРѕСЃРµРјСЊРґРµСЃСЏС‚ СЃРµРјСЊ", "СЃРµРјСЊСЃРѕС‚ РїСЏС‚СЊРґРµСЃСЏС‚ С€РµСЃС‚СЊ"};
         List<String> convertedNumbers = new ArrayList<>();
         System.out.println("Data: " + Arrays.toString(testNumbers));
         for (String testNumber : testNumbers)
@@ -123,13 +123,13 @@ public class NumberConverterTest
             String convertedNumber = converter.convertNumberIntoWords(new BigInteger(testNumber));
             convertedNumbers.add(convertedNumber);
         }
-        assertArrayEquals("Ошибка в промежутке разных десятичных чисел.", exceptedAnswer, convertedNumbers.toArray());
+        assertArrayEquals("РћС€РёР±РєР° РІ РїСЂРѕРјРµР¶СѓС‚РєРµ СЂР°Р·РЅС‹С… РґРµСЃСЏС‚РёС‡РЅС‹С… С‡РёСЃРµР».", exceptedAnswer, convertedNumbers.toArray());
         System.out.println("Passed!");
     }
     @Test
     public void testDifferentThousandsNumbers() {
         String[] testNumbers = {"11229", "9442", "202100"};
-        String[] exceptedAnswer = {"одиннадцать тысяч двести двадцать девять", "девять тысяч четыреста сорок два", "двести две тысячи сто"};
+        String[] exceptedAnswer = {"РѕРґРёРЅРЅР°РґС†Р°С‚СЊ С‚С‹СЃСЏС‡ РґРІРµСЃС‚Рё РґРІР°РґС†Р°С‚СЊ РґРµРІСЏС‚СЊ", "РґРµРІСЏС‚СЊ С‚С‹СЃСЏС‡ С‡РµС‚С‹СЂРµСЃС‚Р° СЃРѕСЂРѕРє РґРІР°", "РґРІРµСЃС‚Рё РґРІРµ С‚С‹СЃСЏС‡Рё СЃС‚Рѕ"};
         List<String> convertedNumbers = new ArrayList<>();
         System.out.println("Test different thousands numbers.");
         System.out.println("Data: " + Arrays.toString(testNumbers));
@@ -138,7 +138,7 @@ public class NumberConverterTest
             String convertedNumber = converter.convertNumberIntoWords(new BigInteger(testNumber));
             convertedNumbers.add(convertedNumber);
         }
-        assertArrayEquals("Ошибка в промежутке разных десятичных чисел.", exceptedAnswer, convertedNumbers.toArray());
+        assertArrayEquals("РћС€РёР±РєР° РІ РїСЂРѕРјРµР¶СѓС‚РєРµ СЂР°Р·РЅС‹С… РґРµСЃСЏС‚РёС‡РЅС‹С… С‡РёСЃРµР».", exceptedAnswer, convertedNumbers.toArray());
         System.out.println("Passed!");
     }
 }

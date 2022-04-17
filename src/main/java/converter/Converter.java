@@ -21,8 +21,4 @@ public abstract class Converter
         return dataHandler;
     }
 
-    public void setDataHandler(DataHandler dataHandler)
-    {
-        this.dataHandler = dataHandler;
-    }
 }
